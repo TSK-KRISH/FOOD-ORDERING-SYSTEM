@@ -1,7 +1,7 @@
 # Food Ordering App
 
 This web application developed with Angular Framework allows users to order food from the given list of food items. 
-##Modules in this application
+## Modules in this application
 * Login/Register (Customer or Admin login based on the user ID used)
 * Home page
 * Menu page
