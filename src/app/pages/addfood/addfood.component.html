@@ -1,0 +1,20 @@
+<h2>Add Food Details</h2>
+<form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+  <div class="form-group">
+      <label for="name">Food Name</label>
+      <input type="text" name="foodname" formControlName="foodname" autocomplete="off"
+         class="form-control input-sm" placeholder="Name">
+      </div>
+      <div class="form-group">
+          <label for="name">Food Description</label>
+          <input type="text" name="description" formControlName="description"
+          autocomplete="off" class="form-control input-sm" placeholder="Enter Description">
+      </div>
+      <div class="form-group">
+          <label for="name">Food Price</label>
+          <input type="text" name="foodprice" formControlName="foodprice"
+          autocomplete="off" class="form-control input-sm" placeholder="Enter price">
+      </div>
+      
+      <button type="submit" class="sbtn" >Submit</button>
+</form><br><br>

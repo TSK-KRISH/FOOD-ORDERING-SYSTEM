@@ -1,0 +1,22 @@
+    <h1 class="tt">Feed Back</h1>
+    <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+        <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" formControlName="name" autocomplete="off"
+               class="form-control input-sm" placeholder="Name">
+            </div>
+            <div class="form-group">
+                <label for="name">Location</label>
+                <input type="text" name="location" formControlName="location"
+                autocomplete="off" class="form-control input-sm" placeholder="Enter Location">
+            </div>
+            <div class="form-group">
+                <label for="name">Feedback</label>
+                <input type="text" name="feedback" formControlName="feedback"
+                autocomplete="off" class="form-control input-sm" placeholder="Enter Location">
+            </div>
+            
+            <button type="submit" class="sbtn" >Submit</button>
+    </form><br><br>
+    <a href="http://localhost/angularcrud/index.php" class="fbutton">DISPLAY FEEDBACKS</a>
+

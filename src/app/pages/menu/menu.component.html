@@ -1,0 +1,23 @@
+<div class="container mt-5 mb-5">
+   <div class="row">
+    <div class="col-lg-4" *ngFor="let fd of foodData">
+        <div class="foodbox mt-3 mb-3">
+            <img src="{{fd.foodImg}}">
+            <p>{{fd.foodDetails}}</p>
+            <h1>{{fd.foodName}}</h1> 
+            <p>{{fd.foodPrice | currency:'INR'}}</p>
+            <br/>
+         <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+            <input type="hidden" formControlName="foodName" value="{{fd.foodName}}">
+            <input type="hidden" formControlName="foodPrice" value="{{fd.foodPrice}}">
+  
+           
+            <a class="buybtn" [routerLink]="['/menu',fd.id]">Buy Now <i class="bi bi-bag"></i></a> &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;
+            <button type="submit" class="bcart" >Add to Cart</button>
+
+       </form>
+       
+        </div>
+    </div>
+   </div>
+</div>

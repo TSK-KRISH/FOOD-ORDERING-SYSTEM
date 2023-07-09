@@ -1,0 +1,28 @@
+.rows
+{
+    height:100%;
+    background-position: center;
+    background-size: cover;
+}
+.ssss
+{
+    top: 25%;
+    padding-left: 20%;
+    position: absolute;
+    color: white;
+}
+
+.form-group
+{   width: 500px;
+    color: white;
+}
+.container
+{
+   width: 100%;
+   height: 120%;
+   background-color: rgba(0,0,0,40);
+   display: flex;
+   align-items: center top;
+   justify-content: center;
+
+}

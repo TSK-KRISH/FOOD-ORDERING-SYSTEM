@@ -1,0 +1,38 @@
+<div class="container mt-5 mb-5">
+    <div class="row">
+      <div class="col-lg-6" *ngIf="menuData">
+        <a routerLink="../../menu" class="btn btn-sm btn-dark mb-3">Back</a>
+        <img src="{{menuData[0].foodImg}}" width="100%" />
+        <h1 class="mt-2">{{menuData[0].foodName}}</h1>
+        <p>{{menuData[0].foodDetails}}</p>
+        <p>{{menuData[0].foodPrice | currency :'INR'}}</p>
+      </div>
+  
+      <div class="col-lg-6 col-lg-5 ">
+        <form [formGroup]="angForm" (ngSubmit)="postdata(angForm)" autocomplete="off">
+          <div class="form-group">
+            <label for="name">Name</label>
+            <input type="text" name="name" formControlName="name" autocomplete="off"
+              class="form-control input-sm" placeholder="Name">
+          </div>
+          <div class="form-group">
+            <label for="phone">PHONE</label>
+            <input type="text" name="phn" formControlName="phn"
+              autocomplete="off" class="form-control input-sm" placeholder="phone no">
+          </div>
+          <div class="form-group">
+            <label for="fname"></label>
+            <input type="hidden" name="fname" formControlName="fname"
+              autocomplete="off" class="form-control input-sm" [value]="menuData[0].foodName">
+          </div>
+          <div class="form-group">
+            <label for="fprice"></label>
+            <input type="hidden" name="fprice" formControlName="fprice" autocomplete="off"
+              class="form-control input-sm" [value]="menuData[0].foodPrice | currency :'INR'">
+          </div>
+          <button type="submit" class="btn btn-success">place order</button>
+        </form>
+      </div>
+    </div>
+  </div>
+  
