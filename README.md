@@ -1,4 +1,15 @@
-# T
+# Food Ordering App
+
+This web application developed with Angular Framework allows users to order food from the given list of food items. 
+##Modules in this application
+* Login/Register (Customer or Admin login based on the user ID used)
+* Home page
+* Menu page
+* Contact page
+* Payment page
+* About page
+
+Includes Create, Delete and Modify both User details and food menu by Admin
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 15.2.1.
 
